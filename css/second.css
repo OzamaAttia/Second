@@ -768,6 +768,8 @@ button:hover{
     /* overflow: hidden; */
     background-color: var(--background-color);
     filter: drop-shadow(0px 0px 10px black);
+    background-color: var(--background-color);
+    position: relative;
 }
 .video::before {
     position: absolute;
@@ -862,14 +864,14 @@ button:hover{
     transform: translateX(-50%);
     /* filter: brightness(10%); */
     /* filter: grayscale(1) brightness(0.5); */
-    filter:brightness(60%) hue-rotate(215deg);
+    filter:brightness(60%) hue-rotate(215deg)  drop-shadow(5px 3px 7px black);
     
     transition: var(--transition-slow);
 
 }
 .about .container img:hover {
     /* filter: grayscale(0) brightness(80%); */
-    filter: brightness(80%) hue-rotate(1deg);
+    filter: brightness(80%) hue-rotate(1deg)  drop-shadow(5px 3px 7px black);
     /* height: 300px; */
 }
 @media (max-width: 767px) {
