@@ -1708,10 +1708,10 @@ footer .social ul li .instgram:hover {
 footer .social ul li .whatsapp:hover {
     color: #25d366;
 }
-footer .social ul li .x:hover {
+/* footer .social ul li .x:hover {
     color: black;
 
-}
+} */
 footer .copyright {
     margin-top: 60px;
 }
