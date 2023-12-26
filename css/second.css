@@ -6,9 +6,23 @@
     margin: 0;
     padding: 0;
 }
-*::selection {
-    background-color: var(--main-color);
-    color: white;
+/* ::-webkit-scrollbar-track {
+    border-radius: 5px;
+} */
+/* ::-webkit-scrollbar-corner {
+    border-radius: 5px;
+} */
+/* ::-webkit-scrollbar-button {
+    background: var(--main-color);
+    border-radius: 15px;
+} */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 15px;
+}
+::-webkit-scrollbar {
+    background: var(--background-color);
+    width: 2px;
 }
 html {
     scroll-behavior: smooth;
@@ -33,7 +47,7 @@ ul{
         width: 750px;
     }
 }
-/* midium */
+/* medium */
 @media (min-width: 992px) {
     .container {
         width: 970px;
@@ -123,8 +137,6 @@ ul{
     --color-in-dark-mode:#eee;
     --p-color-in-dark-mode:#ddd;
     /* dark background */
-
-
 }
 .background-section {
     padding-top: var(--section-padding);
@@ -468,9 +480,9 @@ header nav .form::before{
 
 
 
-/* start desgine */
+/* start design */
 
-.desgine {
+.design {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     background-image: url(../images/wallpaperflare.com_wallpaper\ \(31\).jpg);
@@ -484,7 +496,7 @@ header nav .form::before{
     align-items: center;
     filter: drop-shadow(0px 0px 10px black);
 }
-.desgine::before {
+.design::before {
     content: "";
     position: absolute;
     left: 0;
@@ -493,20 +505,20 @@ header nav .form::before{
     height: 100%;
     background-color: rgb(0 0 0 / 40%);
 }
-.desgine .image {
+.design .image {
     /* z-index: 2; */
     flex: 1 ;
     /* text-align: center; */
     /* position: relative; */
 }
-/* .desgine .image img {
+/* .design .image img {
     left: 50%;
     transform: translatex(-50%);
     position: absolute;
     transition: var(--transition-slow);
     filter: brightness(60%);
 } */
-.desgine .image img {
+.design .image img {
     position: absolute;
     height: 550px;
     left: 3%;
@@ -516,16 +528,16 @@ header nav .form::before{
     filter: hue-rotate(220deg) brightness(90%) drop-shadow(10px 9px 7px black);
     transition: var(--transition-slow);
 }
-/* .desgine .image .img2 {
+/* .design .image .img2 {
     position: absolute;
     height: 300px;
     bottom: 0;
     filter: brightness(90%);
 } */
-.desgine .image img:hover {
+.design .image img:hover {
     filter: hue-rotate(0) brightness(75%) drop-shadow(10px 9px 7px black);
 }
-.desgine .text {
+.design .text {
     z-index: 1;
     flex: 1;
     color: white;
@@ -533,7 +545,7 @@ header nav .form::before{
     padding: 50px;
     transition: var(--transition-slow);
 }
-/* .desgine .text:hover {
+/* .design .text:hover {
     min-width: 100%;
     position: absolute;
     display: flex;
@@ -542,33 +554,33 @@ header nav .form::before{
     align-content: center;
     background-color: rgb(10, 13, 19, 0.6);
 }
-.desgine .text:hover ul {
+.design .text:hover ul {
     margin-left: 10px;
 } */
-.desgine .text h2 {
+.design .text h2 {
     margin-bottom: 40px;
     text-transform: uppercase;
     font-weight: normal;
 }
-.desgine .text ul li{
+.design .text ul li{
     padding: 15px 0;
 }
-.desgine .text ul i{
+.design .text ul i{
     margin-right: 20px;
 }
 @media ( max-width:767px ) {
-    .desgine .image img {
+    .design .image img {
         left: 50%;
         transform: translateX(-50%);
         /* z-index: 2; */
     }
-    .desgine .text {
+    .design .text {
         width: 100%;
         position: absolute;
     }
 }
 
-/* end desgine */
+/* end design */
 
 
 
@@ -595,6 +607,7 @@ header nav .form::before{
     display: flex;
     flex-wrap: wrap;
     margin-top: 60px;
+    /* display: grid; */
 }
 .portfolio .images-container .box {
     flex-basis: calc(( 100% - 15px ) / 3);
@@ -726,7 +739,6 @@ button:hover{
         transform: scale(1);
     }
 } */
-
 /* not my */
 .portfolio button {
     display: block;
@@ -1244,9 +1256,9 @@ button:hover{
 
 
 
-/* start qoute */
+/* start quote */
 
-.qoute {
+.quote {
     background-image: url(../images/8682074.png);
     background-position: center;
     background-size: cover;
@@ -1254,7 +1266,7 @@ button:hover{
     position: relative;
     overflow: hidden;
 }
-.qoute::before {
+.quote::before {
     content: "";
     background-color: rgb(0 0 0 / 75%);
     position: absolute;
@@ -1263,30 +1275,30 @@ button:hover{
     top: 0;
     left: 0;
 }
-.qoute .container {
+.quote .container {
     color: white;
     text-align: center;
     position: relative;
 }
-.qoute .container q {
+.quote .container q {
     margin-bottom: 20px;
     font-size: 30px;
     display: block;
     color: #eee;
     position: relative;
 }
-.qoute .container q::before {
+.quote .container q::before {
     content: f10d;
     font-family: FontAwesome;
 }
-.qoute .container q::after {
+.quote .container q::after {
     content: f10d;
     font-family: FontAwesome;
 }
-.qoute .container span {
+.quote .container span {
     color: #ddd;
 }
-.qoute .container img {
+.quote .container img {
     height: 139px;
     position: absolute;
     left: 50%;
@@ -1295,12 +1307,12 @@ button:hover{
     transition: var(--transition-slow) cubic-bezier(.22,.61,.36,1);
     filter: brightness(0%);
 }
-.qoute .container img:hover {
+.quote .container img:hover {
     bottom: -100px;
     filter: brightness(100%);
 }
 
-/* end qoute */
+/* end quote */
 
 
 
@@ -1710,10 +1722,11 @@ footer .social ul li .instgram:hover {
     color: #da2a7e;
 }
 footer .social ul li .whatsapp:hover {
+    
     color: #25d366;
 }
 /* footer .social ul li .x:hover {
-
+    color: black;
 } */
 footer .copyright {
     margin-top: 60px;
